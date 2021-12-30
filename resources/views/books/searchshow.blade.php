@@ -4,7 +4,7 @@
     <div class="container">
         <div class="row justify-content-center">
             <search
-                endpoint="{{ route('searchstore') }}"
+                endpoint="{{ route('books.store') }}"
                 redirect-endpoint="{{ route('home') }}"
             ></search>
         </div>

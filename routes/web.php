@@ -12,20 +12,12 @@
 */
 
 Route::get('/', 'BookController@index')->name('home');
-
 Auth::routes();
-
 Route::resource('books', 'BookController')->except(['index'])->middleware('auth');
-
-Route::get('/search', 'BookController@search')->name('searchshow');
-Route::post('/searchstore', 'BookController@searchstore')->name('searchstore');
-
+Route::get('/search', 'BookController@search')->name('searchshow')->middleware('auth');
 //Route::prefix('books')->name('books.')->group(function() {
 //
 //});
-
-
-
 //Route::get('/home', 'HomeController@index')->name('home');
 
 

@@ -139,23 +139,8 @@ export default {
                 .catch(error => console.log(error))
             console.log(this.redirectEndpoint)
             window.location.href = this.redirectEndpoint
-
-
         }
     },
-    // computed: {
-    //     computedBook: this.bookItems,
-    //     computedInputText: this.inputText
-    // }
-
 }
 </script>
-<!--{-->
-<!--title: "",-->
-<!--author: "",-->
-<!--publisher: "",-->
-<!--description: "",-->
-<!--thumbnail: ""-->
-<!--}-->
 
-<!--item.volumeInfo.imageLinks.smallThumbnail-->
